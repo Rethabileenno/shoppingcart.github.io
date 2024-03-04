@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+	<!-- Niche Demos -->
+	<link rel="stylesheet" href="demos/kindergarten/kindergarten.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- style for images hover -->
+	<link rel="stylesheet" href="shopping.css">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Reenno Shopping cart</title>
+
+</head>
+
+<body class="stretched">
+
+	<div class="modal-on-load" data-target="#myModal1"></div>
+
+	<!-- Modal -->
+	<div class="modal1 mfp-hide subscribe-widget" id="myModal1">
+		<a href="#" class="d-flex mx-auto h-scale-sm all-ts" style="max-width: 670px">
+			<img src="Screenshot (32).png" alt="Banner Image" class="rounded-4">
+		</a>
+	</div>
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row justify-content-lg-between">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="me-lg-0 col-lg-3">
+							<a href="demo-kindergarten.html">
+								<img class="logo-default ms-0" src="https://img.freepik.com/free-photo/chinese-new-year-celebration-with-rabbit-money-bag_23-2149895550.jpg?t=st=1709321494~exp=1709322094~hmac=ce04c1e3019c99bb5b468a899964c08ee66640e1b7c0d2258aafc0c2bed74289" alt="Canvas Logo">
+							</a>
+						</div><!-- #logo end -->
+
+						<div class="header-misc col-lg-3 justify-content-end">
+							
+							
+							<!-- Login & Signup
+							============================================= -->
+                            <div class="dropdown">
+                                <a class="user-icon d-flex align-items-center me-2 text-dark h-text-color font-primary fw-bold h5 mb-0 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fas fa-user me-2"></i>
+                                </a>
+                              
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="dropdown-item" href="your-login-link">Log in</a></li>
+                                  <li><a class="dropdown-item" href="your-signin-link">Sign up</a></li>
+                                </ul>
+                              </div>
+                      <!-- cart items and buttons 
+							============================================= -->
+				
+								<div id="cartIcon"><i class="fas fa-shopping-cart me-2"></i> <span id="cartCount">0</span></div>
+
+							<button button id="viewCart">View Cart</button>
+
+							<div id="cartPopup" style="display: none;">
+								<button id="closePopup">X</button>
+								<div id="cartItems"></div>
+								<div id="cartTotal"></div>
+							<button id="checkout">Check Out</button>
+							<img src="https://www.timelesstoys.co.za/cdn/shop/t/16/assets/paygate.png?v=51864413426333672271708857413" alt="Payment">
+							</div>
+
+					<!-- WhatsApp Icon
+							============================================= -->
+                            <a href="https://wa.me/+1122233" target="_blank" class="Whatsapp-icon d-flex align-items-center me-2 text-dark h-text-color font-primary fw-bold h5 mb-0">
+								<i class="fa-brands fa-whatsapp me-2"></i> <span class="nocolor d-none d-md-block"></span>
+							</a>
+						</div>
+
+ 							<!-- burger for responsiveness 
+							============================================= -->
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<nav class="primary-menu">
+
+							<ul class="menu-container">
+								<li class="menu-item"><a class="menu-link" href="#"><div>Home</div></a></li>
+                                <li class="menu-item"><a class="menu-link" href="#ourtoys"><div>Our Toys</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#aboutus"><div>About Us</div></a></li>
+                                <li class="menu-item"><a class="menu-link" href="#ourblogs"><div>Our Blogs</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#contactus"><div>Contacts</div></a></li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- Hero
+		============================================= -->
+		<section id="slider" class="slider-element include-header" style="background-color: #efcd79;">
+
+			<div class="position-absolute top-0 start-0 w-100 h-100" style="background: transparent url('demos/kindergarten/images/hero-bg-icons.svg') center center / cover; opacity: 0.04"></div>
+
+			<div class="container">
+				<div class="row align-items-center min-vh-100 pt-5 pb-4">
+					<div class="col-lg-6">
+						<h6 class="mb-4 ls-1 text-uppercase fw-normal">Welcome to ReeToys- Where Learning Meets Play!</h6>
+						<h1 class="display-3 fw-bolder">Explore, Play and <br> Learn with  <span class="color">REETOYS!!..</span></h1>
+						<!-- <p class="mt-4 mb-5 fw-light">Fuel your child's imagination and creativity with toys that transcend ordinary play. Watch as they embark on exciting journeys, solving puzzles, building structures, and engaging in activities that blend education with entertainment.</p>
+						<a href="#" class="btn text-white bg-color rounded-1 py-3 px-5 fw-medium">Buy Now  <i class="bi-arrow-right position-relative" style="top: 2px"></i></a> -->
+					</div>
+					<div class="col-lg-6 align-self-end mt-5 mt-lg-0">
+						<img src="https://img.freepik.com/free-vector/children-playing-board-game-white-background_1308-102885.jpg" alt="Hero Bg">
+					</div>
+				</div>
+			</div>
+
+			<div class="shape-divider" data-shape="wave-2" data-position="bottom" data-height="80"></div>
+
+			<div class="position-relative d-none d-sm-block">
+				<img src="demos/kindergarten/images/fish2.png" alt="Fish" class="background-img pos-right float-anim" style="top: -120px">
+			</div>
+
+		</section>
+
+		<!-- Content
+		============================================= -->
+
+								<!-- about section 
+							============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+
+				<div class="container" id="aboutus">
+					<h2 class="color h1 fw-bold mb-5">Why Our Toys:</h2>
+					<div class="row col-mb-50">
+						<div class="col-lg-8">
+							<div class="row col-mb-50">
+								<div class="col-md-6">
+									<div class="feature-box">
+										<div class="fbox-icon">
+											<img src="https://cdn-icons-png.freepik.com/256/10595/10595702.png?ga=GA1.1.334091838.1709310178&" alt="Icon" class="p-2 rounded" style="background-color: #BDE0E0">
+										</div>
+										<div class="fbox-content">
+											<h3 class="text-transform-none ls-0">Fun and Interactive Games</h3>
+											<p>Transforming educational moments into exciting adventures with a lasting impact.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="feature-box">
+										<div class="fbox-icon mb-4">
+											<img src="https://cdn-icons-png.freepik.com/256/808/808439.png?ga=GA1.1.334091838.1709310178&" alt="Icon" class="p-2 rounded" style="background-color: #F9E8DF">
+										</div>
+										<div class="fbox-content">
+											<h3 class="text-transform-none ls-0">Empowering Future Leaders</h3>
+											<p>A foundation for critical thinking and problem-solving</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="feature-box">
+										<div class="fbox-icon mb-4">
+											<img src="https://cdn-icons-png.freepik.com/256/11327/11327009.png?ga=GA1.1.334091838.1709310178&" alt="Icon" class="p-2 rounded" style="background-color: #DEE6ED">
+										</div>
+										<div class="fbox-content">
+											<h3 class="text-transform-none ls-0">Innovative Learning Approach</h3>
+											<p>Entertainment with educational value to cultivate a love for learning in every child.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="feature-box">
+										<div class="fbox-icon mb-4">
+											<img src="https://cdn-icons-png.freepik.com/256/4909/4909634.png?ga=GA1.1.334091838.1709310178&" alt="Icon" class="p-2 rounded" style="background-color: #d6ECCD">
+										</div>
+										<div class="fbox-content">
+											<h3 class="text-transform-none ls-0">Quality You Can Trust</h3>
+											<p>Non-toxic materials for a secure learning environment.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 mt-5 mt-lg-0">
+							<div class="card border-0 p-3 rounded-6" style="background-color: #eddee6;">
+								<div class="card-body">
+									<img src="demos/kindergarten/images/card-img.png" alt="Card Image" style="margin-top: -80px;">
+									<h3 class="card-title mt-4">Read More about us and our Toys </h3>
+                                    <a href="#" class="btn text-white bg-color rounded-1 py-3 px-5 fw-medium">Read here.. <i class="bi-arrow-right position-relative" style="top: 2px"></i></a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- about section ends here
+							============================================= -->
+
+							<!-- ourtoys /products section
+							============================================= -->
+
+				<div class="section py-6" id="ourtoys" style="background-color: #F6F3EE;">
+
+					<div class="shape-divider" data-shape="wave-5" data-height="50"></div>
+					<div class="position-absolute top-0 start-0 w-100 h-100" style="background: url('demos/kindergarten/images/hero-bg-icons.svg') center center / cover; opacity: 0.04"></div>
+					<div class="container py-5">
+						<ul class="nav nav-pills justify-content-around mx-auto mw-sm mb-3 flex-column flex-md-row" role="tablist">
+							<li class="nav-item " role="presentation">
+								<button class="nav-link color1 active" id="age-toddler-tab" data-bs-toggle="pill" data-bs-target="#age-toddler" type="button" role="tab" aria-controls="age-toddler" aria-selected="true">Baby:<span> 0-8 Months</span></button>
+							</li>
+							<li class="nav-item " role="presentation">
+								<button class="nav-link color2" id="age-preschool-tab" data-bs-toggle="pill" data-bs-target="#age-preschool" type="button" role="tab" aria-controls="age-preschool" aria-selected="false">Toddler:<span>18 months - 3 years</span></button>
+							</li>
+							<li class="nav-item " role="presentation">
+								<button class="nav-link color3" id="age-kindergarten-tab" data-bs-toggle="pill" data-bs-target="#age-kindergarten" type="button" role="tab" aria-controls="age-kindergarten" aria-selected="false">Pre-schoolers:<span>3 - 5 years</span></button>
+							</li>
+							<li class="nav-item " role="presentation">
+								<button class="nav-link color4" id="age-prekindergarten-tab" data-bs-toggle="pill" data-bs-target="#age-prekindergarten" type="button" role="tab" aria-controls="age-prekindergarten" aria-selected="false">School-age: <span>6 - 8 years</span></button>
+							</li>
+						</ul>
+						<div class="clear"></div>
+
+							<!-- babys tab 
+							============================================= -->
+						<div class="tab-content mt-4">
+							<div class="tab-pane fade show active" id="age-toddler" role="tabpanel" aria-labelledby="age-toddler-tab">
+								<div class="row col-mb-30">
+									<div class="col-lg-4 col-md-6">
+                                        <div class="card border-0 h-100 shadow-sm">
+
+
+											 <div class="item" data-id="1">
+													<div class="image-container">
+														<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/lila-ballerina-bunny-by-jellycat-jellycat-377738_720x.jpg?v=1709213756" alt="">
+                                                <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/lila-ballerina-bunny-by-jellycat-jellycat-739033_720x.webp?v=1709213756" alt="">
+													</div>
+													<h3 class="card-header font-primary p-4 color1">Lila Ballerina Bunny by Jellycat</h3>
+													<div class="price-and-button font-primary">
+													<p class="price" >R100</p>
+													<button class="add-to-cart" style="border-radius: 50%; color: #547794;">Add to Cart</button>
+												</div>
+												</div> 
+
+											
+												
+												<div class="item" data-id="2">
+                                            <div class="image-container">
+                                                <img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/cordy-roy-fox-medium-by-jellycat-jellycat-399164_720x.jpg?v=1709213422" alt="">
+                                                <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/cordy-roy-fox-medium-by-jellycat-jellycat-621174_720x.webp?v=1709213422" alt="">
+                                            </div>
+                                            <h3 class="card-header font-primary p-4 color1">Cordy Roy Fox by Jellycat </h3>
+											<div class="price-and-button font-primary">
+												<p class="price">R170</p>
+												<button class="add-to-cart">Add to Cart</button>
+											</div>
+										</div>
+
+
+										<div class="item" data-id="3">
+                                            <div class="image-container">
+												<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/bashful-apple-bunny-medium-by-jellycat-jellycat-486593_460x.jpg?v=1709213241" alt="">
+                                                <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/bashful-apple-bunny-medium-by-jellycat-jellycat-879850_720x.webp?v=1709213241" alt="">
+                                            </div>
+                                            <h3 class="card-header font-primary p-4 color1">Bashful Apple Bunny  by Jellycat </h3>
+											<div class="price-and-button font-primary">
+												<p class="price">R230</p>
+												<button class="add-to-cart">Add to Cart</button>
+											</div>
+										</div>
+
+                                                                                                         
+                                        </div> 
+									</div>
+
+
+									<div class="col-lg-4 col-md-6">
+										<div class="card border-0 h-100 shadow-sm">
+
+
+												<div class="item" data-id="4">
+												<div class="image-container">
+													<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/dimpl-fat-brain-toys-667219_720x.jpg?v=1626605389" alt="">
+                                                <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/dimpl-fat-brain-toys-446288_720x.jpg?v=1626605389" alt="">
+												</div>
+												<h3 class="card-header font-primary p-4 color1">Dimpl by Fat Brain Toys </h3>
+												<div class="price-and-button font-primary">
+													<p class="price">R350.00</p>
+													<button class="add-to-cart">Add to Cart</button>
+												</div>
+											</div>
+	
+    
+                                                    <div class="item" data-id="5">
+														<div class="image-container">
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/oombee-cube-fat-brain-toys-767768_460x.jpg?v=1626605907" alt="">
+															<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/oombee-cube-fat-brain-toys-664921_460x.jpg?v=1626605907" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color1">Oombee Cube</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R430.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+			
+	
+
+
+													<div class="item" data-id="6">
+														<div class="image-container">
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/pipsquigz-fat-brain-toys-542631_460x.jpg?v=1626605982" alt="">
+                                                    <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/pipsquigz-fat-brain-toys-756765_460x.jpg?v=1626605982" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color1">Bashful Apple Bunny  by Jellycat</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R539.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+
+										</div>
+									</div>
+
+									 <div class="col-lg-4 col-md-6">
+										<div class="card border-0 h-100 shadow-sm">
+                                            
+
+                                        
+											<div class="item" data-id="7">
+												<div class="image-container">
+													<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/klickity-fat-brain-toys-353197_720x.jpg?v=1626605621" alt="">
+													<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/klickity-fat-brain-toys-245282_720x.jpg?v=1626605621" alt="">
+												</div>
+												<h3 class="card-header font-primary p-4 color1">Klickity</h3>
+												<div class="price-and-button font-primary">
+													<p class="price">R949.00</p>
+													<button class="add-to-cart">Add to Cart</button>
+												</div>
+											</div>
+
+    
+
+                                                
+											<div class="item" data-id="8">
+												<div class="image-container">
+													<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/mini-bilibos-set-of-6-moluk-461907_720x.jpg?v=1626605875" alt="">
+                                                <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/mini-bilibos-set-of-6-moluk-140694_720x.jpg?v=1626605875" alt="">
+												</div>
+												<h3 class="card-header font-primary p-4 color1">Mini Bilibo's (set of 6)</h3>
+												<div class="price-and-button font-primary">
+													<p class="price">R449.00</p>
+													<button class="add-to-cart">Add to Cart</button>
+												</div>
+											</div>
+
+
+                                         
+
+												<div class="item" data-id="9">
+													<div class="image-container">
+														<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/stack-and-pour-bath-egg-by-tiger-tribe-tiger-tribe-797689_720x.jpg?v=1634843715" alt="">
+                                                <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/stack-and-pour-bath-egg-by-tiger-tribe-tiger-tribe-229770_720x.jpg?v=1634843715" alt="">
+													</div>
+													<h3 class="card-header font-primary p-4 color1">Stack and Pour Bath Egg by Tiger</h3>
+													<div class="price-and-button font-primary">
+														<p class="price">R199.00</p>
+														<button class="add-to-cart">Add to Cart</button>
+													</div>
+												</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- baby content ends here
+							============================================= -->
+
+
+							<!-- Toddler content 
+							============================================= -->
+
+							<div class="tab-pane fade" id="age-preschool" role="tabpanel" aria-labelledby="age-preschool-tab">
+								<div class="row col-mb-30">
+									<div class="col-lg-4 col-md-6">
+										<div class="card border-0 h-100 shadow-sm">
+
+
+						
+    
+												<div class="item" data-id="10">
+													<div class="image-container">
+														<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/shopping-list-game-orchard-toys-698877_720x.jpg?v=1626606091" alt="">
+                                                <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/shopping-list-game-orchard-toys-529236_720x.jpg?v=1626606091" alt="">
+													</div>
+													<h3 class="card-header font-primary p-4 color2">Shopping List Game</h3>
+													<div class="price-and-button font-primary">
+														<p class="price">R299.00</p>
+														<button class="add-to-cart">Add to Cart</button>
+													</div>
+												</div>
+												
+                          
+                                                    
+													<div class="item" data-id="11">
+														<div class="image-container">
+														    <img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/match-and-spell-game-orchard-toys-115240_460x.jpg?v=1652407419" alt="">
+                                                    <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/matchandspell4_460x.jpg?v=1652363760" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color2">Match and Spell Game </h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R299.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+
+                                               
+
+													
+													<div class="item" data-id="12">
+														<div class="image-container">
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/little-bug-bingo-mini-game-orchard-toys-381933_460x.jpg?v=1626605752" alt="">
+															<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/little-bug-bingo1_460x.jpg?v=1568712961" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color2">Little Bug Bingo Mini Game </h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R169.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+
+
+										</div>
+									</div>
+
+									<div class="col-lg-4 col-md-6">
+										<div class="card border-0 h-100 shadow-sm">
+
+    
+
+												<div class="item" data-id="13">
+													<div class="image-container"> 
+														<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/waterslide-marble-run-tiger-tribe-844097_460x.jpg?v=1647508689" alt="">
+                                                <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/waterslide-marble-run-tiger-tribe-576508_460x.jpg?v=1647508689" alt="">
+													</div>
+													<h3 class="card-header font-primary p-4 color2">Waterslide - Marble Run </h3>
+													<div class="price-and-button font-primary">
+														<p class="price">R419.00</p>
+														<button class="add-to-cart">Add to Cart</button>
+													</div>
+												</div>
+
+                                            
+                             
+
+													<div class="item" data-id="14">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/bugzzle-by-fat-brain-toys-fat-brain-toys-771495_460x.jpg?v=1626605253" alt="">
+                                                    <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/bugzzle-by-fat-brain-toys-fat-brain-toys-187675_460x.jpg?v=1626605253" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color2">Bugzzle by Fat Brain Toys</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R549.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+
+
+                                       
+
+													<div class="item" data-id="15">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/outdoor-activity-set-back-to-nature-tiger-tribe-809098_460x.webp?v=1647432566" alt="">
+                                                    <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/outdoor-activity-set-back-to-nature-tiger-tribe-525022_460x.webp?v=1647432566" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color2">Back to Nature</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R360.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+
+										</div>
+									</div>
+
+									 <div class="col-lg-4 col-md-6">
+										<div class="card border-0 h-100 shadow-sm">
+
+										
+    
+
+												<div class="item" data-id="16">
+													<div class="image-container"> 
+														<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/djeco-diy-princess-tiaras-djeco-712282_460x.jpg?v=1626605399" alt="">
+														<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/djeco-diy-princess-tiaras-djeco-921237_460x.jpg?v=1626605399" alt="">
+													</div>
+													<h3 class="card-header font-primary p-4 color2">Djeco DIY Princess Tiaras</h3>
+													<div class="price-and-button font-primary">
+														<p class="price">R319.00</p>
+														<button class="add-to-cart">Add to Cart</button>
+													</div>
+												</div>
+												
+
+                                            
+                                            
+    
+                                                    
+													<div class="item" data-id="17">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/Waterworks_-_Pipeline_-_069049_-_HR_900x_3ff488e1-00f5-4964-ae44-60a90ebaa5aa_460x.jpg?v=1647508590" alt="">
+                                                    <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/waterworks-pipeline-bath-toy-by-tiger-tribe-tiger-tribe-707970_460x.jpg?v=1635362898" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color2">Waterworks - Pipeline Bath Toy</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R389.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+
+
+													<div class="item" data-id="18">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/build-a-beetle-mini-game-orchard-toys-458708_460x.jpg?v=1626605275" alt="">
+															<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/build-a-beetle-mini-game-orchard-toys-612309_460x.jpg?v=1644825117" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color2">Build A Beetle Mini Game</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R169.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Toddler content ends here
+								============================================= -->
+
+
+								<!-- Preschool content 
+							============================================= -->
+
+							<div class="tab-pane fade" id="age-kindergarten" role="tabpanel" aria-labelledby="age-kindergarten-tab">
+								<div class="row col-mb-30">
+									<div class="col-lg-4 col-md-6">
+										<div class="card border-0 h-100 shadow-sm">
+											  
+										
+
+												<div class="item" data-id="19">
+													<div class="image-container"> 
+														<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/plui-rain-cloud-moluk-776290_300x.jpg?v=1626605968" alt="">
+                                                <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/plui-rain-cloud-moluk-134700_460x.png?v=1626605968" alt="">
+													</div>
+													<h3 class="card-header font-primary p-4 color3">Plui Rain Cloud</h3>
+													<div class="price-and-button font-primary">
+														<p class="price">R329.00</p>
+														<button class="add-to-cart">Add to Cart</button>
+													</div>
+												</div>
+    
+                                            
+                                        
+
+
+													<div class="item" data-id="20">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/jellystone-designs-calm-down-sensory-bottle-jellystone-designs-409515_460x.webp?v=1698576309" alt="">
+															<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/jellystone-designs-calm-down-sensory-bottle-jellystone-designs-975876_460x.webp?v=1698576309" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color3">Jellystone Designs - Calm</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R349.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+
+
+                                          
+
+
+													<div class="item" data-id="21">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/simpl-dimpl-fidget-toy-by-fat-brain-toys-fat-brain-toys-759813_460x.jpg?v=1626606104" alt="">
+															<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/simpl-dimpl-fidget-toy-by-fat-brain-toys-fat-brain-toys-497699_460x.jpg?v=1626606104" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color3">JSimpl Dimpl Fidget Toy</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R125.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+
+										</div>
+									</div>
+
+									<div class="col-lg-4 col-md-6">
+										<div class="card border-0 h-100 shadow-sm">
+											
+											<div class="item" data-id="22">
+												<div class="image-container"> 
+													<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/match-and-spell-next-steps-game-orchard-toys-109679_460x.jpg?v=1626605814" alt="">
+													<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/match-and-spell-next-steps-game-orchard-toys-432157_720x.jpg?v=1626605814" alt="">
+												</div>
+												<h3 class="card-header font-primary p-4 color3">Match and Spell</h3>
+												<div class="price-and-button font-primary">
+													<p class="price">R299.00</p>
+													<button class="add-to-cart">Add to Cart</button>
+												</div>
+											</div>
+											
+
+												
+											<div class="item" data-id="23">
+												<div class="image-container"> 
+													<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/pop-to-the-shops-game-orchard-toys-974724_460x.jpg?v=1626605994" alt="">
+											<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/pop-to-the-shops-game-orchard-toys-656823_460x.jpg?v=1626605994" alt="">
+												</div>
+												<h3 class="card-header font-primary p-4 color3">Pop to the Shops Game</h3>
+												<div class="price-and-button font-primary">
+													<p class="price">R399.00</p>
+													<button class="add-to-cart">Add to Cart</button>
+												</div>
+											</div>
+                                                    
+										
+													
+	
+													<div class="item" data-id="24">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/farmyard-heads-and-tails-game-orchard-toys-476665_460x.jpg?v=1626605447" alt="">
+                                                    <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/farmyard-heads-and-tails-game-orchard-toys-420445_460x.jpg?v=1626605447" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color3">Farmyard Heads and Tails</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R299.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+
+
+
+										</div>
+									</div>
+
+									 <div class="col-lg-4 col-md-6">
+										<div class="card border-0 h-100 shadow-sm">
+
+
+
+												<div class="item" data-id="25">
+													<div class="image-container"> 
+														<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/cactus-mentor-time-teacher-watch-pink-cactus-watches-402321_460x.jpg?v=1626605326" alt="">
+														<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/cactus-mentor-time-teacher-watch-pink-cactus-watches-793591_460x.jpg?v=1626605326" alt="">
+													</div>
+													<h3 class="card-header font-primary p-4 color3">Cactus Mentor Time Teacher</h3>
+													<div class="price-and-button font-primary">
+														<p class="price">R799.00</p>
+														<button class="add-to-cart">Add to Cart</button>
+													</div>
+												</div>
+														
+    
+                                            
+
+													<div class="item" data-id="26">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/giant-road-jigsaw-puzzle-orchard-toys-640780_460x.jpg?v=1626605497" alt="">
+															<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/giant-road-jigsaw-puzzle-orchard-toys-709040_540x.jpg?v=1626605497" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color3">Giant Road Jigsaw Puzzle </h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R495.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+    
+                                                    
+                                              
+													
+													<div class="item" data-id="27">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/rainbow-unicorns-game-orchard-toys-874889_460x.jpg?v=1626606044" alt="">
+                                                    <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/rainbow-unicorns-game-orchard-toys-582486_460x.jpg?v=1626606044" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color3">Rainbow Unicorns Game</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R299.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+    
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Preschool content ends here
+							============================================= -->
+
+							<!-- School-age content
+							============================================= -->
+
+							<div class="tab-pane fade" id="age-prekindergarten" role="tabpanel" aria-labelledby="age-prekindergarten-tab">
+								<div class="row col-mb-30">
+									<div class="col-lg-4 col-md-6">
+										<div class="card border-0 h-100 shadow-sm">
+
+											
+
+
+
+												<div class="item" data-id="28">
+													<div class="image-container"> 
+														<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/story-time-chess-story-time-chess-476251_460x.png?v=1656907637" alt="">
+                                                <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/story-time-chess-story-time-chess-719997_460x.jpg?v=1656864361" alt="">
+													</div>
+													<h3 class="card-header font-primary p-4 color4">Story Time Chess</h3>
+													<div class="price-and-button font-primary">
+														<p class="price">R899.00</p>
+														<button class="add-to-cart">Add to Cart</button>
+													</div>
+												</div>
+
+
+													<div class="item" data-id="29">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/shopping-list-game-orchard-toys-698877_460x.jpg?v=1626606091" alt="">
+															<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/shopping-list-game-orchard-toys-529236_460x.jpg?v=1626606091" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color4">Shopping List Game</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R299.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+    
+                                                    
+                                       
+
+
+													
+													<div class="item" data-id="30">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/little-bug-bingo-mini-game-orchard-toys-381933_460x.jpg?v=1626605752" alt="">
+															<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/little-bug-bingo1_460x.jpg?v=1568712961" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color4">Little Bug Bingo Mini Game</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R169.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+    
+
+										</div>
+									</div>
+
+									<div class="col-lg-4 col-md-6">
+										<div class="card border-0 h-100 shadow-sm">
+
+															
+												<div class="item" data-id="31">
+													<div class="image-container"> 
+														<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/beat-the-clock-stopwatch-set-tiger-tribe-759074_460x.jpg?v=1626605209" alt="">
+														<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/beat-the-clock-stopwatch-set-tiger-tribe-337497_460x.jpg?v=1626605209" alt="">
+													</div>
+													<h3 class="card-header font-primary p-4 color4">Beat the Clock - Stopwatch</h3>
+													<div class="price-and-button font-primary">
+														<p class="price">R379.00</p>
+														<button class="add-to-cart">Add to Cart</button>
+													</div>
+												</div>
+
+    
+
+
+													<div class="item" data-id="32">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/outdoor-activity-set-back-to-nature-tiger-tribe-809098_460x.webp?v=1647432566" alt="">
+                                                    <img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/outdoor-activity-set-back-to-nature-tiger-tribe-364390_460x.jpg?v=1647417604" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color4">Outdoor Activity Set </h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R360.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+	
+
+
+
+													<div class="item" data-id="33">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/transfer-magic-unicorns-tiger-tribe-450570_460x.jpg?v=1626606214" alt="">
+															<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/transfer-magic-unicorns-tiger-tribe-312871_460x.jpg?v=1626606214" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color4">Transfer Magic - Unicorns</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R155.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+	
+										</div>
+									</div>
+
+									 <div class="col-lg-4 col-md-6">
+										<div class="card border-0 h-100 shadow-sm">
+
+
+
+												<div class="item" data-id="34">
+													<div class="image-container"> 
+														<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/magic-highlighters-tiger-tribe-108125_460x.jpg?v=1626605815" alt="">
+														<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/magic-highlighters-tiger-tribe-947434_460x.jpg?v=1647504540" alt="">
+													</div>
+													<h3 class="card-header font-primary p-4 color4">Magic Highlighters</h3>
+													<div class="price-and-button font-primary">
+														<p class="price">R185.00</p>
+														<button class="add-to-cart">Add to Cart</button>
+													</div>
+												</div>
+    
+                                            
+                                            
+
+													<div class="item" data-id="35">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/unicorn-jewels-mini-game-orchard-toys-634249_460x.jpg?v=1626606321" alt="">
+															<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/unicorn-jewels-mini-game-orchard-toys-167753_460x.jpg?v=1626606321" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color4">Unicorn Jewels Mini Game</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R189.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+		
+    
+                                                    
+                                             
+
+													<div class="item" data-id="35">
+														<div class="image-container"> 
+															<img class="base-image" src="https://www.timelesstoys.co.za/cdn/shop/products/djeco-wooden-beads-little-animals-djeco-232349_460x.jpg?v=1626997867" alt="">
+															<img class="hover-image" src="https://www.timelesstoys.co.za/cdn/shop/products/djeco-wooden-beads-little-animals-djeco-955524_460x.jpg?v=1626997867" alt="">
+														</div>
+														<h3 class="card-header font-primary p-4 color4">Djeco Wooden Beads</h3>
+														<div class="price-and-button font-primary">
+															<p class="price">R299.00</p>
+															<button class="add-to-cart">Add to Cart</button>
+														</div>
+													</div>
+		
+													
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- School-age content ends here
+							============================================= -->
+
+					<div class="shape-divider" data-shape="wave-5" data-position="bottom" data-height="60"></div>
+				</div>
+
+					<!-- Testimonials
+							============================================= -->
+
+				<div class="position-relative d-none d-sm-block">
+					<img src="demos/kindergarten/images/fish1.png" alt="Fish" class="background-img float-anim">
+				</div>
+
+				<div class="container z-2">
+					<div class="row align-items-center justify-content-center col-mb-30">
+						<div class="col-xl">
+							<h6 class="mb-4 ls-2 text-uppercase fw-normal">Testimonials</h6>
+							<h1 class="display-3 fw-bolder">Just watch what <span class="color">Parents</span> say.</h1>
+							<p class="mb-5 fw-light">From unlocking their child's creativity to witnessing the joy of playful learning, our products have become an integral part of many families. Discover the genuine stories and testimonials that highlight the impact of our educational toys on the lives of both children and parents alike.</p>
+							<a href="#" class="btn text-white bg-color rounded-1 py-3 px-5 fw-medium">View Full Testimonials</a>
+						</div>
+						<div class="col-auto">
+							<img src="demos/kindergarten/images/kindergarten-tv.svg" alt="Image TV" class="kindergarder-mockup-tv">
+
+							<div class="kindergarten-carousel-wrap">
+								<div id="kindergarten-carousel-img" class="carousel kindergarten-tv-carousel slide carousel-fade" data-bs-ride="carousel">
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block position-relative w-100" src="https://media.licdn.com/dms/image/D4D03AQFFSjhCp4Irkg/profile-displayphoto-shrink_800_800/0/1695803206756?e=2147483647&v=beta&t=IEDW82asB2-SAlwUaoRZFNjUfSriu7MbTaHoWwOwvxs" height="300px" alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block position-relative w-100"  src="https://pbs.twimg.com/profile_images/1697397877243318272/3tlJJ5HG_400x400.jpg" height="300px" alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block position-relative w-100" src="https://melsoftacademy.com/wp-content/uploads/2023/10/1669195938949.jpeg" height="300px" alt="Third slide">
+										</div>
+									</div>
+								</div>
+
+								<div id="kindergarten-carousel-text" class="carousel kindergarten-tv-carousel slide" data-bs-ride="carousel">
+									<div class="carousel-inner h-100">
+										<div class="carousel-item active h-100">
+											<div class="carousel-caption">
+												<h3 class="text-white mb-4 h2">Thabi</h3>
+												<a href="https://www.youtube.com/watch?v=P3Huse9K6Xs" data-lightbox="iframe"><i class="uil uil-play ps-1 bg-white rounded-circle text-dark position-relative icon-stacked h4 m-0" style="top: 4px"></i></a>
+											</div>
+										</div>
+										<div class="carousel-item h-100">
+											<div class="carousel-caption">
+												<h3 class="text-white mb-4 h2">Larreth</h3>
+												<a href="https://www.youtube.com/watch?v=P3Huse9K6Xs" data-lightbox="iframe"><i class="uil uil-play ps-1 bg-white rounded-circle text-dark position-relative icon-stacked h4 m-0" style="top: 4px"></i></a>
+											</div>
+										</div>
+										<div class="carousel-item h-100">
+											<div class="carousel-caption">
+												<h3 class="text-white mb-4 h2">Laurice</h3>
+												<a href="https://www.youtube.com/watch?v=P3Huse9K6Xs" data-lightbox="iframe"><i class="uil uil-play ps-1 bg-white rounded-circle text-dark position-relative icon-stacked h4 m-0" style="top: 4px"></i></a>
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control-prev op-09 h-op-1" role="button">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</a>
+									<a class="carousel-control-next op-09 h-op-1" role="button">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- Testimonials ends here
+							============================================= -->
+
+						<!-- Our Blogs
+							============================================= -->
+
+				<div class="section"  id="ourblogs" style="padding: 100px 0; background-color: rgb(221, 147, 171)">
+					<div class="shape-divider" data-shape="wave-5" data-height="50"></div>
+					<div class="position-absolute top-0 start-0 w-100 h-100" style="background: url('demos/kindergarten/images/hero-bg-icons.svg') center center / cover; opacity: 0.04"></div>
+					<div class="container z-3">
+						<h2 class="color text-center h1 fw-bold mb-5 pb-2">Our Blogs:</h2>
+
+						<div class="row gutter-50">
+							<div class="col-lg-4">
+
+								<!-- Post Article -->
+								<div class="posts-md">
+									<div class="entry">
+										<div class="entry-image position-relative mb-md-4">
+											<a href="#">
+												<img src="demos/kindergarten/images/news/1.jpg" alt="Image 3" class="rounded-5">
+												<div class="shape-divider" data-shape="wave-5" data-position="bottom" data-width="110" data-height="30" data-fill="#ECF4F1"></div>
+											</a>
+											<div class="entry-date">Mar<span>27</span></div>
+										</div>
+										<div class="entry-title text-transform-none">
+											<h3><a class="ls-0 h3" href="#">Unlocking the Power of Play: Educational Toys Redefined</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<!-- Post Article -->
+								<div class="posts-md">
+									<div class="entry">
+										<div class="entry-image position-relative mb-md-4">
+											<a href="#">
+												<img src="demos/kindergarten/images/news/2.jpg" alt="Image 3" class="rounded-5">
+												<div class="shape-divider" data-shape="wave-5" data-position="bottom" data-width="110" data-height="30" data-fill="#ECF4F1"></div>
+											</a>
+											<div class="entry-date">Apr<span>03</span></div>
+										</div>
+										<div class="entry-title text-transform-none">
+											<h3><a class="ls-0 h3" href="#">Safety First: The Non-Toxic Promise of Our Educational Toys</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<!-- Post Article -->
+								<div class="posts-md">
+									<div class="entry">
+										<div class="entry-image position-relative mb-md-4">
+											<a href="#">
+												<img src="demos/kindergarten/images/news/3.jpg" alt="Image 3" class="rounded-5">
+												<div class="shape-divider" data-shape="wave-5" data-position="bottom" data-width="110" data-height="30" data-fill="#ECF4F1"></div>
+											</a>
+											<div class="entry-date">Jun<span>11</span></div>
+										</div>
+										<div class="entry-title text-transform-none">
+											<h3><a class="ls-0 h3" href="#">From Imagination to Reality: How Our Toys Inspire Creativity</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shape-divider" data-shape="wave-5" data-position="bottom" data-height="60"></div>
+				</div>
+
+					<!-- Contact Us
+							============================================= -->
+
+				<div class="section bg-transparent" id="contactus">
+					<div class="container">
+
+						<div class="row gutter-50">
+							<div class="col-lg-6">
+								<img src="demos/kindergarten/images/contact.svg" alt="Image">
+						
+							</div>
+							<div class="col-lg-6">
+								<h2 class="color display-4 mb-3 fw-bold">Share your kiddies experince with us.</h2>
+								<p>Tell us about your little ones experience, any recommendations are Welcome!</p>
+
+								<div class="form-widget">
+
+								<div class="form-result"></div>
+
+								<form class="mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+
+									<div class="form-process">
+										<div class="css3-spinner">
+											<div class="css3-spinner-scaler"></div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6 form-group mb-4">
+											<input type="text" id="kindergarten-contactform-first-name" name="kindergarten-contactform-first-name" value="" placeholder="First Name" class="form-control required">
+										</div>
+
+										<div class="col-md-6 form-group mb-4">
+											<input type="text" id="kindergarten-contactform-last-name" name="kindergarten-contactform-last-name" value="" placeholder="Last Name" class="form-control required">
+										</div>
+
+										<div class="w-100"></div>
+
+										<div class="col-12 form-group mb-4">
+											<input type="email" id="kindergarten-contactform-email" name="kindergarten-contactform-email" value="" placeholder="Email" class="required email form-control">
+										</div>
+
+										<div class="w-100"></div>
+
+										
+
+										<div class="w-100"></div>
+
+										<div class="col-12 form-group mb-4">
+											<textarea class="required form-control py-2" id="kindergarten-contactform-message" placeholder="Write your Message" name="kindergarten-contactform-message" rows="5" cols="30"></textarea>
+										</div>
+
+										<div class="col-12 form-group d-none">
+											<input type="text" id="kindergarten-contactform-botcheck" name="kindergarten-contactform-botcheck" value="" class="form-control">
+										</div>
+
+										<div class="col-12 form-group text-end">
+											<button class="btn text-white bg-color rounded-1 py-3 px-5 fw-medium" type="submit" id="kindergarten-contactform-submit" name="kindergarten-contactform-submit" value="submit">Send Message <i class="bi-arrow-right position-relative" style="top: 2px"></i></button>
+										</div>
+									</div>
+
+									<input type="hidden" name="prefix" value="kindergarten-contactform-">
+
+								</form>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="border-0" style="background-image: linear-gradient(to top, #61BFDB, #E0F2C2, #FFF);">
+
+			<div class="position-absolute top-0 start-0 w-100 h-100" style="background: transparent url('demos/kindergarten/images/footer.png') center bottom / cover;"></div>
+
+			<div class="container" style="padding-bottom: 380px;">
+				<div class="footer-widgets-wrap">
+					<div class="row col-mb-50">
+						<div class="col-lg-1-5 col-4">
+							<div class="widget widget_links">
+
+								<h3 class="ls-0 mb-3 fw-bold">Location</h3>
+	                                 <i class="h6 bi-geo-alt"></i>
+                                <a class="text-dark h-text-color" href="https://map.google.com" target="_blank">
+                                    795 Folsom Ave,<br>Suite 600<br>
+                                    San Francisco, <br>CA 94107<br>
+                                </a>
+                               
+                     
+                         
+							</div>
+						</div>
+						<div class="col-lg-1-5 col-4">
+							<div class="widget widget_links">
+
+								<h3 class="ls-0 mb-3 fw-bold">Support</h3>
+
+								<ul>
+									<li><a href="#" class="h-text-color">Home</a></li>
+									<li><a href="#" class="h-text-color">About</a></li>
+									<li><a href="#" class="h-text-color">FAQs</a></li>
+									<li><a href="#" class="h-text-color">Contact</a></li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="col-lg-1-5 col-4">
+							<div class="widget widget_links">
+
+								<h3 class="ls-0 mb-3 fw-bold">Trending</h3>
+
+								<ul>
+									<li><a href="#" class="h-text-color">Shop</a></li>
+									<li><a href="#" class="h-text-color">Delivery and Returns</a></li>
+									<li><a href="#" class="h-text-color">Blog</a></li>
+									<li><a href="#" class="h-text-color">Specials</a></li>
+								</ul>
+
+							</div>
+						</div>
+					
+						<div class="col-lg-1-5 col-6">
+							<div class="widget">
+
+								<h3 class="ls-0 mb-3 fw-bold">Contact</h3>
+
+								<div>
+									
+									<div class="mb-1"><i class="h6 bi-telephone-outbound me-2">:</i> <a class="text-dark h-text-color" href="tel:08547632521">+(27)85 476 3252</a></div>
+									<div><i class="h6 fa-brands fa-whatsapp me-2">:</i> <a class="text-dark h-text-color" href="https://wa.me/01147521433">+(27)74 279 1433</a></div>
+                                    <div><i class="h6 bi-envelope me-2"></i> <a class="text-dark h-text-color" href="mailto:noreply@canvas.com">info@renno.com</a></div>
+
+								</div>
+
+							</div>
+
+                            <div class="d-flex mt-3">
+                                <a href="https://facebook.com/semicolonweb" class="social-icon si-small border-default rounded-circle h-bg-facebook" title="Facebook" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a href="https://instagram.com/semicolonweb" class="social-icon si-small border-default rounded-circle h-bg-instagram" title="instagram" target="_blank">
+                                    <i class="bi-instagram"></i>
+                                    <i class="bi-instagram"></i>
+                                </a>
+
+                                <a href="https://youtube.com/__semicolonweb" class="social-icon si-small border-default rounded-circle h-bg-google" title="google" target="_blank">
+                                    <i class="fa-brands fa-google"></i>
+                                    <i class="fa-brands fa-google"></i>
+                                </a>
+                            </div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-auto text-center mt-4 text-smaller pb-3 font-primary">
+				Copyrights &copy; 2024 All Rights Reserved by Rethabile Mohapi.
+			</div>
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="bi-hand-index fs-5 rounded-circle"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/functions.js"></script>
+
+	<!-- Include Date Range Picker -->
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+	<script>
+		let carousels = jQuery('#kindergarten-carousel-img, #kindergarten-carousel-text');
+
+		jQuery('.carousel-control-prev').on( 'click', function(){
+			carousels.carousel('prev');
+		});
+
+		jQuery('.carousel-control-next').on( 'click', function(){
+			carousels.carousel('next');
+		});
+
+		jQuery(function() {
+			jQuery(".component-flatpickr").flatpickr({
+				enableTime: true,
+				dateFormat: "d/m/yy - H:i",
+			});
+		});
+	</script>
+
+    
+    <script src="shopping.js"></script>
+</body>
+</html>
