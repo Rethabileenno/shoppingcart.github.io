@@ -120,6 +120,10 @@
     text-align: center;
     color: #6953A8;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c73ecf93388cdadffb9cd4e8b4089fedc409b4d9
 #cartPopup {
     /* Default styles for large screens */
     width: 600px;
@@ -143,4 +147,8 @@
         height: auto;
         /* ... other styles ... */
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c73ecf93388cdadffb9cd4e8b4089fedc409b4d9
