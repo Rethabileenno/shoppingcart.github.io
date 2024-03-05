@@ -120,3 +120,29 @@
     text-align: center;
     color: #6953A8;
 }
+
+
+#cartPopup {
+    /* Default styles for large screens */
+    width: 600px;
+    height: 400px;
+    /* ... other styles ... */
+}
+
+@media screen and (max-width: 600px) {
+    #cartPopup {
+        /* Styles for screens smaller than 600px */
+        width: 100%;
+        height: auto;
+        /* ... other styles ... */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #cartPopup {
+        /* Styles for screens smaller than 400px */
+        width: 100%;
+        height: auto;
+        /* ... other styles ... */
+    }
+}
